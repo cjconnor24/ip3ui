@@ -5,12 +5,13 @@
   --light-blue:#E2EEF4;
   --dark-green:#10AB96;
   --dark-gray:#3A4850;
+  --dark-red:#AB1010;
   --event-bg:#eee;
 }
 * {
   box-sizing: border-box;
 }
-h1,h2,h3,h4,h5 {font-family:'Raleway',sans-serif;font-weight: 400;}
+h1,h2,h3,h4,h5 {font-family:'Raleway',sans-serif;font-weight: 700;}
 body {
   font-family: Arial,Helvetica,sans-serif;
   color:var(--dark-gray);
@@ -34,6 +35,9 @@ body {
 }
 .btn.green {background:var(--dark-green);}
 .btn.blue {background:var(--navy-blue);}
+.btn.red {background:var(--dark-red);}
+.btn.lge {padding:20px 30px;font-size:1.1em;}
+.btn.sml {padding:10px 10px; font-size:0.7em;}
 /* TIMELINE CSS */
 
 /* TIMELINE CONTAINER */
