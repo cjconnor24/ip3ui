@@ -188,6 +188,16 @@ body {
   background: var(--highlight-yellow);
 }
 
+/* @keyframes left-event {
+  0% {left:0px;}
+  100% {left:10px;}
+} */
+/* .event.left .details:hover {
+  animation: left-event 100ms ease-in;
+  animation-fill-mode: forwards;
+} */
+
+
 .details .info i {
   color: var(--navy-blue);
 }
