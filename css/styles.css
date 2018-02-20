@@ -1,12 +1,16 @@
 @import "normalize.css";
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+/* @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700'); */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 :root {
   --navy-blue: #0684C2;
   --light-blue: #E2EEF4;
   --dark-green: #10AB96;
   --dark-gray: #3A4850;
   --dark-red: #AB1010;
+  --highlight-yellow: #FDFFD5;
   --event-bg: #eee;
+  --transition-speed: 0.25s;
 }
 
 * {
@@ -14,7 +18,7 @@
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
 }
 
@@ -95,16 +99,17 @@ body {
   padding: 0 30px;
   margin: 0 0 20px 0;
   width: 50%;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 300;
   line-height: 1.3em;
 }
-.event:not(:first-child){
-  top:-200px;
+
+.event:not(:first-child) {
+  top: -200px;
 }
 
-
 /* EVENT CIRCLES */
+
 .event::after {
   content: '';
   position: absolute;
@@ -134,6 +139,7 @@ body {
   border: medium solid var(--event-bg);
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent var(--event-bg);
+  transition:var(--transition-speed);
 }
 
 .right::before {
@@ -147,6 +153,15 @@ body {
   border: medium solid var(--event-bg);
   border-width: 10px 10px 10px 0;
   border-color: transparent var(--event-bg) transparent transparent;
+}
+
+/* TRIANGLE HOVER STATES */
+.left:hover::before {
+  /* border-colour:; */
+  border-color: transparent transparent transparent var(--highlight-yellow);
+}
+.right:hover::before {
+  border-color: transparent var(--highlight-yellow) transparent transparent;
 }
 
 .event.right {
@@ -166,6 +181,11 @@ body {
   background-color: var(--event-bg);
   position: relative;
   border-radius: 6px;
+  transition: var(--transition-speed);
+}
+
+.event .details:hover {
+  background: var(--highlight-yellow);
 }
 
 .details .info i {
@@ -173,34 +193,33 @@ body {
 }
 
 @media(max-width:900px) {
-
   /* MOVE THE LINE TO THE LEFT */
   .timeline::before {
-  left: 0px;
-}
-.event {
-  width:100%;
-}
-.event:not(:first-child){
-  top:inherit;
-}
-.event.left, .event.right {left:0;}
-.event.left::after {
-  left:-10px;
-}
-/* FLIP THE ARROW TO THE LEFT */
-.left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 20px;
-  border: medium solid var(--event-bg);
-  border-width: 10px 10px 10px 0;
-  border-color: transparent var(--event-bg) transparent transparent;
-}
-
-
+    left: 0px;
+  }
+  .event {
+    width: 100%;
+  }
+  .event:not(:first-child) {
+    top: inherit;
+  }
+  .event.left, .event.right {
+    left: 0;
+  }
+  .event.left::after {
+    left: -10px;
+  }
+  /* FLIP THE ARROW TO THE LEFT */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 20px;
+    border: medium solid var(--event-bg);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--event-bg) transparent transparent;
+  }
 }
