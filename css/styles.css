@@ -99,9 +99,12 @@ body {
   font-weight: 300;
   line-height: 1.3em;
 }
+.event:not(:first-child){
+  top:-200px;
+}
+
 
 /* EVENT CIRCLES */
-
 .event::after {
   content: '';
   position: absolute;
