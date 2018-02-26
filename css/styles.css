@@ -42,15 +42,19 @@ body {
 /* COLOUR STYLES FOR BTUTONS */
 .green {
   background: var(--dark-green)!important;
+border: var(--dark-green)!important;
 }
-
-.blue {
-  background: var(--navy-blue)!important;
+.green:hover {
+  background:var(--dark-green-highlight)!important;
+  border:var(--dark-green)!important;
 }
 
 .red {
   background: var(--dark-red)!important;
-  border:none;
+  border:var(--dark-red-highlight)!important;
+}
+.red:hover {
+  background: var(--dark-red-highlight)!important;
 }
 
 .lge {
