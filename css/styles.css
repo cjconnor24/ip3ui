@@ -8,6 +8,7 @@
   --dark-green: #10AB96;
   --dark-gray: #3A4850;
   --dark-red: #AB1010;
+  --light-red:#CB9195;
   --highlight-yellow: #FDFFD5;
   --event-bg: #eee;
   --transition-speed: 0.25s;
@@ -70,7 +71,7 @@ body {
 
 /* TIMELINE CONTAINER */
 
-.timeline {
+.timeline, .linked {
   position: relative;
   margin: 0 auto;
   max-width: 1280px;
@@ -92,6 +93,26 @@ body {
   margin-left: -10px;
 }
 
+/* LINKED EVENTS */
+.linked {
+  display:none;
+  left:30px;
+}
+.linked::before {
+  content: ' ';
+  position: absolute;
+  width: 20px;
+  background: var(--light-red);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-radius: 20px;
+  margin-left: -10px;
+}
+.linked .event .details {
+  width:calc(100% - 30px);
+}
+
 /* EVENT CONTAINER */
 
 .event {
@@ -104,9 +125,9 @@ body {
   line-height: 1.3em;
 }
 
-.event:not(:first-child) {
+/* .event:not(:first-child) {
   top: -200px;
-}
+} */
 
 /* EVENT CIRCLES */
 
@@ -204,8 +225,14 @@ body {
 
 @media(max-width:900px) {
   /* MOVE THE LINE TO THE LEFT */
-  .timeline::before {
+  .timeline::before, .linked::before {
     left: 0px;
+  }
+  .linked {
+    left:0;
+  }
+  .linked .details {
+    width:calc(100%;);
   }
   .event {
     width: 100%;
