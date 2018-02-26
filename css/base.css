@@ -1,0 +1,61 @@
+body {
+  background: var(--navy-blue);
+}
+
+.main-body {
+  background: #FFF;
+  padding: 30px 0;
+}
+
+/* NAVIGATION STYLES */
+
+nav {
+  background: var(--navy-blue);
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  display: block;
+  text-decoration: none;
+  color: #FFF;
+  padding: 20px 30px;
+  transition: all var(--transition-speed);
+}
+
+.navbar ul li a:hover {
+  background: var(--light-blue);
+  color: var(--navy-blue);
+}
+
+.navbar ul li a.nav__logo {
+  background: url('/img/coruson-logo-white.svg') no-repeat center center;
+  background-size: 80%;
+}
+
+.navbar ul li a.nav__logo span {
+  visibility: hidden;
+}
+
+/* FOOTER STYLES */
+
+footer {
+  padding: 30px 0;
+  color: white;
+  background: var(--navy-blue);
+}
+
+footer .disclaimer {
+  text-align: center;
+  font-size: 0.8em;
+}

@@ -1,12 +1,14 @@
 @import "_variables.css";
 @import "normalize.css";
+@import "skeleton.css";
+@import "base.css";
 /* @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700'); */
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
 
 
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -18,15 +20,15 @@ h1, h2, h3, h4, h5 {
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--dark-gray);
-}
+} */
 
-.container {
+/* .container {
   max-width: 1280px;
   width: 80%;
   margin: 0 auto;
-}
+} */
 
-.btn, a.btn {
+/* .btn, a.btn {
   text-decoration: none;
   display: inline-block;
   background: var(--dark-gray);
@@ -35,26 +37,28 @@ body {
   border-radius: 5px;
   margin: 0 5px 10px 0;
   font-size: 0.9em;
+} */
+
+/* COLOUR STYLES FOR BTUTONS */
+.green {
+  background: var(--dark-green)!important;
 }
 
-.btn.green {
-  background: var(--dark-green);
+.blue {
+  background: var(--navy-blue)!important;
 }
 
-.btn.blue {
-  background: var(--navy-blue);
+.red {
+  background: var(--dark-red)!important;
+  border:none;
 }
 
-.btn.red {
-  background: var(--dark-red);
-}
-
-.btn.lge {
+.lge {
   padding: 20px 30px;
   font-size: 1.1em;
 }
 
-.btn.sml {
+.sml {
   padding: 10px 10px;
   font-size: 0.7em;
 }

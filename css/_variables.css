@@ -8,5 +8,9 @@
   --light-red:#CB9195;
   --highlight-yellow: #FDFFD5;
   --event-bg: #eee;
+
   --transition-speed: 0.25s;
+  --font-family: 'Lato', sans-serif;
+
+  --grid-width:1280px;
 }
