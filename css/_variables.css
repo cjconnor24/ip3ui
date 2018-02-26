@@ -1,0 +1,12 @@
+:root {
+  /* COLOUR VARIABLES */
+  --navy-blue: #0684C2;
+  --light-blue: #E2EEF4;
+  --dark-green: #10AB96;
+  --dark-gray: #3A4850;
+  --dark-red: #AB1010;
+  --light-red:#CB9195;
+  --highlight-yellow: #FDFFD5;
+  --event-bg: #eee;
+  --transition-speed: 0.25s;
+}
