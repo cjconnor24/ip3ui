@@ -29,39 +29,123 @@
         <h1>Aileron Airways</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam veniam, atque ipsa perspiciatis illum unde ducimus illo, eos, mollitia odio magni! Tempore quibusdam voluptatum voluptatem, dolorem ex nostrum possimus, tempora.</p>
 
-        <!-- The above form looks like this -->
-
-
-<!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
-
-<!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
-
+        <h2>Flight Information</h2>
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Sex</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dave Gamache</td>
+              <td>26</td>
+              <td>Male</td>
+              <td>San Francisco</td>
+            </tr>
+            <tr>
+              <td>Dwayne Johnson</td>
+              <td>42</td>
+              <td>Male</td>
+              <td>Hayward</td>
+            </tr>
+          </tbody>
+        </table>
         <!-- Standard buttons -->
-        <a class="button" href="#">Aileron Airways</a>
+        <!-- <a class="button" href="#">Aileron Airways</a>
         <button>Button element</button>
         <input type="submit" value="submit input">
-        <input type="button" value="button input">
-
-        <!-- Primary buttons -->
-        <a class="button button-primary green" href="#">Anchor button</a>
+        <input type="button" value="button input"> -->
+        <!-- <a class="button button-primary green" href="#">Anchor button</a>
         <button class="button-primary red">Button element</button>
         <input class="button-primary" type="submit" value="submit input">
-        <input class="button-primary" type="button" value="button input">
+        <input class="button-primary" type="button" value="button input"> -->
+        <div class="timeline">
 
-        <div class="row">
-          <div class="six columns">
-            <h2>This is width</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dolorum asperiores, non, facilis inventore magni atque excepturi rem nisi aperiam necessitatibus omnis fugit laborum amet totam officiis dolorem harum modi!</p>
+          <div class="event left" data-date-time="3 hours ago">
+
+            <div class="details">
+              <h2>Event Name</h2>
+              <p class="info"><i class="far fa-calendar"></i> 1st January 2018 <i class="far fa-clock"></i> 22:45 <i class="fas fa-paperclip"></i> 4</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi numquam officia ipsa quasi, ex est ullam delectus ducimus porro, inventore repellat repudiandae labore corporis facilis atque tempora soluta, laboriosam dicta!</p>
+              <p>
+                <a href="#" class="button button-primary green"><i class="fas fa-eye"></i> View Event</a>
+                <a href="#" class="button button-primary blue"><i class="fas fa-pencil-alt"></i> Quick Edit</a>
+                <a href="#" class="button button-primary red linked-events"><i class="fas fa-link"></i> Show Linked Events <strong>(3)</strong></a> </p>
+            </div>
+
           </div>
-          <div class="six columns">
-            <h2>This is width</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dolorum asperiores, non, facilis inventore magni atque excepturi rem nisi aperiam necessitatibus omnis fugit laborum amet totam officiis dolorem harum modi!</p>
+
+          <div class="linked">
+
+            <div class="event right" data-date-time="3 hours ago">
+
+              <div class="details">
+                <h2>Event Name</h2>
+                <p class="info"><i class="far fa-calendar"></i> 1st January 2018 <i class="far fa-clock"></i> 22:45 <i class="fas fa-paperclip"></i> 4</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi numquam officia ipsa quasi, ex est ullam delectus ducimus porro, inventore repellat repudiandae labore corporis facilis atque tempora soluta, laboriosam dicta!</p>
+                <p>
+                  <a href="#" class="button button-primary green"><i class="fas fa-eye"></i> View Event</a>
+                  <a href="#" class="button button-primary blue"><i class="fas fa-pencil-alt"></i> Quick Edit</a>
+                  <a href="#" class="button button-primary red linked-events"><i class="fas fa-link"></i> Show Linked Events <strong>(3)</strong></a> </p>
+              </div>
+
+            </div>
+
+            <div class="event right" data-date-time="3 hours ago">
+
+              <div class="details">
+                <h2>Event Name</h2>
+                <p class="info"><i class="far fa-calendar"></i> 1st January 2018 <i class="far fa-clock"></i> 22:45 <i class="fas fa-paperclip"></i> 4</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi numquam officia ipsa quasi, ex est ullam delectus ducimus porro, inventore repellat repudiandae labore corporis facilis atque tempora soluta, laboriosam dicta!</p>
+                <p>
+                  <a href="#" class="button button-primary green"><i class="fas fa-eye"></i> View Event</a>
+                  <a href="#" class="button button-primary blue"><i class="fas fa-pencil-alt"></i> Quick Edit</a>
+                  <a href="#" class="button button-primary red linked-events"><i class="fas fa-link"></i> Show Linked Events <strong>(3)</strong></a> </p>
+              </div>
+
+            </div>
+
           </div>
+
+          <div class="event left" data-date-time="3 hours ago">
+
+            <div class="details">
+              <h2>Event Name</h2>
+              <p class="info"><i class="far fa-calendar"></i> 1st January 2018 <i class="far fa-clock"></i> 22:45 <i class="fas fa-paperclip"></i> 4</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi numquam officia ipsa quasi, ex est ullam delectus ducimus porro, inventore repellat repudiandae labore corporis facilis atque tempora soluta, laboriosam dicta!</p>
+              <p>
+                <a href="#" class="button button-primary green"><i class="fas fa-eye"></i> View Event</a>
+                <a href="#" class="button button-primary blue"><i class="fas fa-pencil-alt"></i> Quick Edit</a>
+                <a href="#" class="button button-primary red linked-events"><i class="fas fa-link"></i> Show Linked Events <strong>(3)</strong></a> </p>
+            </div>
+
+          </div>
+
+          <div class="event right" data-date-time="3 hours ago">
+
+            <div class="details">
+              <h2>Event Name</h2>
+              <p class="info"><i class="far fa-calendar"></i> 1st January 2018 <i class="far fa-clock"></i> 22:45 <i class="fas fa-paperclip"></i> 4</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi numquam officia ipsa quasi, ex est ullam delectus ducimus porro, inventore repellat repudiandae labore corporis facilis atque tempora soluta, laboriosam dicta!</p>
+              <p>
+                <a href="#" class="button button-primary green"><i class="fas fa-eye"></i> View Event</a>
+                <a href="#" class="button button-primary blue"><i class="fas fa-pencil-alt"></i> Quick Edit</a>
+                <a href="#" class="button button-primary red linked-events"><i class="fas fa-link"></i> Show Linked Events <strong>(3)</strong></a> </p>
+            </div>
+
+          </div>
+
+
+
         </div>
+
+
+
       </div>
-
-
-
     </div>
 
     <footer>
@@ -80,7 +164,7 @@
           <div class="six columns" style="text-align:right;">
 
             <img src="/img/aileron-airways-logo-white.svg" alt="Airleon Airways Logo" class="footer__aileronlogo">
-            <p class="footer__contactdetails">0800 123 1234 <br> <a href="#">support@ideagen.co.uk</a></p>
+            <!-- <p class="footer__contactdetails">0800 123 1234 <br> <a href="#">support@ideagen.co.uk</a></p> -->
           </div>
 
         </div>
