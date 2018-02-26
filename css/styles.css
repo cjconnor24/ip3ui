@@ -73,9 +73,9 @@ border: var(--dark-green)!important;
 
 .timeline, .linked {
   position: relative;
-  margin: 0 auto;
-  max-width: 1280px;
-  width: 90%;
+  /* margin: 0 auto; */
+  /* max-width: 1280px; */
+  width: 100%;
   margin: 50px auto 50px auto;
 }
 
@@ -95,7 +95,7 @@ border: var(--dark-green)!important;
 
 /* LINKED EVENTS */
 .linked {
-  display:none;
+  /* display:none; */
   left:30px;
 }
 .linked::before {
@@ -109,16 +109,19 @@ border: var(--dark-green)!important;
   border-radius: 20px;
   margin-left: -10px;
 }
+.linked .event {
+  width:calc(50% - 30px);
+}
 .linked .event .details {
-  width:calc(100% - 30px);
+  /* width:calc(100% - 30px); */
 }
 
+.linked .event:nth-child(odd) .details{ margin:0px 0 20px 30px; }
+.linked .event:nth-child(even) .details{ margin:0px 0 20px 30px; }
 /* EVENT CONTAINER */
 
 .event {
   position: relative;
-  padding: 0 30px;
-  margin: 0 0 20px 0;
   width: 50%;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
@@ -204,6 +207,10 @@ border: var(--dark-green)!important;
   border-radius: 6px;
   transition: var(--transition-speed);
 }
+.event.left .details{ margin:20px 30px 20px 0px; }
+.event.right .details{ margin:20px 0px 20px 30px; }
+
+
 
 .event .details:hover {
   background: var(--highlight-yellow);
@@ -228,12 +235,11 @@ border: var(--dark-green)!important;
   .timeline::before, .linked::before {
     left: 0px;
   }
-  .linked {
+  /* .linked {
+    width:100%!important;
     left:0;
-  }
-  .linked .details {
-    width:calc(100%;);
-  }
+  } */
+
   .event {
     width: 100%;
   }
@@ -246,6 +252,29 @@ border: var(--dark-green)!important;
   .event.left::after {
     left: -10px;
   }
+
+  .event.left .details,
+  .event.right .details
+  { margin:20px 0px 20px 30px; }
+  /* .event.right .details{ margin:20px 0px 20px 30px; } */
+
+.linked {
+  left:30px;
+}
+.linked .event {
+  width:calc(100% - 30px);
+}
+/* .linked .details {
+  width:calc(100% - 120px);
+} */
+/* .linked
+.linked .event {
+  width:100%;
+}
+.linked .event .details {
+  width:100%;
+} */
+
   /* FLIP THE ARROW TO THE LEFT */
   .left::before {
     content: " ";
