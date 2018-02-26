@@ -1,10 +1,10 @@
 :root {
   /* COLOUR VARIABLES */
-  --navy-blue: #0684C2;
-  --light-blue: #E2EEF4;
-  --dark-green: #10AB96;
-  --dark-gray: #3A4850;
-  --dark-red: #AB1010;
+  --navy-blue: #0684C2;--navy-blue-highlight:#4FA8D4;
+  --light-blue: #E2EEF4;--light-blue-highlight:#50A8D4;
+  --dark-green: #10AB96;--dark-green-highlight:#57C4B5;
+  --dark-gray: #3A4850;--dark-gray-highlight:#747E84;
+  --dark-red: #AB1010;--dark-red-highlight:#C45757;
   --light-red:#CB9195;
   --highlight-yellow: #FDFFD5;
   --event-bg: #eee;
