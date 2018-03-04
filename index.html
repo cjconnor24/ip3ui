@@ -15,9 +15,9 @@
   <meta name="theme-color" content="#ffffff">
 
   <script>
-    // TOGGLE THE LINKED EVENTS
     $(document).ready(function($) {
 
+      // TOGGLE THE LINKED EVENTS PROTOTYPE
       $('.timeline').find('.linked-events').click(function(e) {
 
         e.preventDefault();
@@ -36,6 +36,19 @@
 
       });
 
+
+      // SOME PROTOTYPE CODE FOR SHOWING / HIDING MODALS
+      $('.modal-button').click(function(e) {
+
+        e.preventDefault();
+
+        $('.modal').fadeIn('fast');
+        $('.modal').find('.close').click(function(e) {
+          $(this).parents().eq(1).fadeOut('fast');
+        })
+
+      });
+
     });
   </script>
 
@@ -44,6 +57,40 @@
 <body>
 
   <div class="application">
+
+    <div class="modal">
+
+      <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <h2><i class="fas fa-calendar-alt"></i> Create New Something</h2>
+        <p>This will do something with an overlay modal.</p>
+
+        <form>
+          <div class="row">
+            <div class="six columns">
+              <label for="eventname">Event Name</label>
+              <input class="u-full-width" type="text" placeholder="e.g. Flight 101 Failure" id="eventname">
+            </div>
+            <div class="six columns">
+              <label for="exampleRecipientInput">Reason for contacting</label>
+              <select class="u-full-width" id="exampleRecipientInput">
+      <option value="Option 1">Questions</option>
+      <option value="Option 2">Admiration</option>
+      <option value="Option 3">Can I get your number?</option>
+      </select>
+            </div>
+          </div>
+          <label for="description">Description</label>
+          <textarea class="u-full-width" placeholder="Halfway throught the flight..." id="description"></textarea>
+
+          <input class="button-primary green" type="submit" value="Log Event">
+        </form>
+
+      </div>
+
+    </div>
 
     <nav class="navbar">
       <div class="container">
@@ -114,6 +161,11 @@
           </tbody>
         </table>
         <!-- Standard buttons -->
+
+        <h2>Modal Overlay</h2>
+        <p>This will be a test for a modal. <a class="button button-primary green modal-button" href="#">Launch Modal</a>
+        </p>
+
         <h2>Buttons</h2>
         <a class="button" href="#">Aileron Airways</a>
         <button>Button element</button>
