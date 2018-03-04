@@ -70,29 +70,33 @@ transition:all var(--transition-speed);
 }
 .navbar .navbar__hamburger {
   position:absolute;
-  right:0;
-  top:0;
+  right:10px;
+  top:10px;
   display:none;
-  height:60px;
-  width:60px;
+  background:#FFF;
+  border-radius:5px;
+  height:40px;
+  width:40px;
   cursor: pointer;
   transition: all var(--transition-speed);
 }
 .navbar .navbar__hamburger::after {
   content:'\f0c9';
   display:block;
-  color:#FFF;
+  color:var(--navy-blue);
   text-align:center;
-  line-height:60px;
-  font-size:25px;
+  line-height:40px;
+  font-size:20px;
   font-weight: 900;
   font-family: "Font Awesome\ 5 Free";
+  transition:all var(--transition-speed);
 }
 .navbar .navbar__hamburger:hover {
-  background:var(--light-blue);
+  background:var(--dark-green);
+  /* box-shadow:inset 0px 0px 10px #000; */
 }
 .navbar .navbar__hamburger:hover::after {
-  color:var(--navy-blue);
+  color:white;
 }
 /* FOOTER STYLES */
 
