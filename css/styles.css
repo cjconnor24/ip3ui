@@ -8,38 +8,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
 
-
-/* * {
-  box-sizing: border-box;
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--dark-gray);
-} */
-
-/* .container {
-  max-width: 1280px;
-  width: 80%;
-  margin: 0 auto;
-} */
-
-/* .btn, a.btn {
-  text-decoration: none;
-  display: inline-block;
-  background: var(--dark-gray);
-  color: #FFF;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin: 0 5px 10px 0;
-  font-size: 0.9em;
-} */
-
 /* COLOUR STYLES FOR BTUTONS */
 .green {
   background: var(--dark-green)!important;
@@ -235,14 +203,11 @@ animation:spin 4s linear infinite;
 }
 
 @media(max-width:900px) {
+
   /* MOVE THE LINE TO THE LEFT */
   .timeline::before, .linked::before {
     left: 0px;
   }
-  /* .linked {
-    width:100%!important;
-    left:0;
-  } */
 
   .event {
     width: 100%;
@@ -260,7 +225,6 @@ animation:spin 4s linear infinite;
   .event.left .details,
   .event.right .details
   { margin:20px 0px 20px 30px; }
-  /* .event.right .details{ margin:20px 0px 20px 30px; } */
 
 .linked {
   left:30px;
@@ -268,16 +232,6 @@ animation:spin 4s linear infinite;
 .linked .event {
   width:calc(100% - 30px);
 }
-/* .linked .details {
-  width:calc(100% - 120px);
-} */
-/* .linked
-.linked .event {
-  width:100%;
-}
-.linked .event .details {
-  width:100%;
-} */
 
   /* FLIP THE ARROW TO THE LEFT */
   .left::before {
