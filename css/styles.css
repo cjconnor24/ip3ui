@@ -85,6 +85,13 @@
 .linked .event {
   width: calc(50% - 30px);
 }
+/* NESTED LINK */
+.linked .linked::before {
+  background: darkred;
+}
+.linked .linked .event {
+  width: calc(50% - 60px);
+}
 
 .linked .event .details {
   /* width:calc(100% - 30px); */
@@ -252,6 +259,16 @@
   }
   .linked .event {
     width: calc(100% - 30px);
+  }
+  /* NESTED EVENT */
+  .linked .linked .event .details {
+    /* margin:0;
+    padding:0; */
+  }
+  .linked .linked .event {
+    width: calc(100% - 60px);
+    margin:0;
+    padding:0;
   }
   /* FLIP THE ARROW TO THE LEFT */
   .left::before {
