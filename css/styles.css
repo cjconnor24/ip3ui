@@ -146,6 +146,18 @@ border: var(--dark-green)!important;
   border: 3px solid var(--navy-blue);
 }
 
+.linked .event::after {
+  color:var(--dark-red);
+  font-weight:900;
+  font-family: "Font Awesome\ 5 Free";
+  content: "\f0c1";
+font-size:10px;
+text-align:center;
+line-height:14px;
+
+  border-color:var(--dark-red);
+}
+
 /* POSITION LEFT AND RIGHT OF LINE */
 
 .event .left {
