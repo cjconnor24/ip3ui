@@ -7,111 +7,203 @@
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
 
-$(document).ready(function(){
-
-console.log("THIS LOADED");
-
-    $(".linked-events").click(function(){
-      console.log("This worked");
-        $(".linked").slideToggle(500);
-        return false;
-    });
-});
-
-</script>
 </head>
 
 <body>
 
-  <div class="container">
+  <div class="application">
 
+    <nav class="navbar">
+      <div class="container">
+        <ul>
+          <li><a href="#" class="nav__logo"><span>Ideagen Coruson Logo</span></a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Timelines</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="main-body">
+      <div class="container">
+        <h1>Aileron Airways</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam veniam, atque ipsa perspiciatis illum unde ducimus illo, eos, mollitia odio magni! Tempore quibusdam voluptatum voluptatem, dolorem ex nostrum possimus, tempora.</p>
+
+
+        <h2>Form Element</h2>
+        <form>
+  <div class="row">
+    <div class="six columns">
+      <label for="eventname">Event Name</label>
+      <input class="u-full-width" type="text" placeholder="e.g. Flight 101 Failure" id="eventname">
+    </div>
+    <div class="six columns">
+      <label for="exampleRecipientInput">Reason for contacting</label>
+      <select class="u-full-width" id="exampleRecipientInput">
+        <option value="Option 1">Questions</option>
+        <option value="Option 2">Admiration</option>
+        <option value="Option 3">Can I get your number?</option>
+      </select>
+    </div>
   </div>
+  <label for="description">Description</label>
+  <textarea class="u-full-width" placeholder="Halfway throught the flight..." id="description"></textarea>
 
-  <div class="container">
+  <input class="button-primary green" type="submit" value="Log Event">
+</form>
+<!-- END FORM ELEMENT -->
 
-    <h1>Button Tests</h1>
-    <p>Here are some different button colours and sizes. <a href="#" class="btn green sml"><i class="fas fa-plus"></i> Create New Event</a>
-      <a href="#" class="btn "><i class="fas fa-plus"></i> Create New Event</a>
-      <a href="#" class="btn red"><i class="fas fa-plus"></i> Create New Event</a>
-      <a href="#" class="btn blue lge"><i class="fas fa-plus"></i> Create New Event</a>
+        <h2>Flight Information</h2>
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Sex</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dave Gamache</td>
+              <td>26</td>
+              <td>Male</td>
+              <td>San Francisco</td>
+            </tr>
+            <tr>
+              <td>Dwayne Johnson</td>
+              <td>42</td>
+              <td>Male</td>
+              <td>Hayward</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Standard buttons -->
+        <h2>Buttons</h2>
+        <a class="button" href="#">Aileron Airways</a>
+        <button>Button element</button>
+        <input type="submit" value="submit input">
+        <input type="button" value="button input">
+        <a class="button button-primary green" href="#">Anchor button</a>
+        <button class="button-primary red">Button element</button>
+        <input class="button-primary" type="submit" value="submit input">
+        <input class="button-primary" type="button" value="button input">
 
-    </p>
+        <h1>Event Timeline</h1>
+        <p>Below are the current events listed on this timeline</p>
 
-  </div>
+        <div class="timeline">
 
-  <div class="timeline">
+          <div class="event left" data-date-time="3 hours ago">
 
-    <div class="event left" data-date-time="3 hours ago">
+            <div class="details">
+              <h2>Event Name</h2>
+              <p class="info"><i class="far fa-calendar"></i> 1st January 2018 <i class="far fa-clock"></i> 22:45 <i class="fas fa-paperclip"></i> 4</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi numquam officia ipsa quasi, ex est ullam delectus ducimus porro, inventore repellat repudiandae labore corporis facilis atque tempora soluta, laboriosam dicta!</p>
+              <p>
+                <a href="#" class="button button-primary green"><i class="fas fa-eye"></i> View Event</a>
+                <a href="#" class="button button-primary blue"><i class="fas fa-pencil-alt"></i> Quick Edit</a>
+                <a href="#" class="button button-primary red linked-events"><i class="fas fa-link"></i> Show Linked Events <strong>(3)</strong></a> </p>
+            </div>
 
-      <div class="details">
-        <h2>Event Name</h2>
-        <p class="info"><i class="far fa-calendar"></i> 1st January 2018 <i class="far fa-clock"></i> 22:45 <i class="fas fa-paperclip"></i> 4</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi numquam officia ipsa quasi, ex est ullam delectus ducimus porro, inventore repellat repudiandae labore corporis facilis atque tempora soluta, laboriosam dicta!</p>
-        <p><a href="#" class="btn green"><i class="fas fa-eye"></i> View Event</a> <a href="#" class="btn blue"><i class="fas fa-pencil-alt"></i> Quick Edit</a> <a href="#" class="btn red linked-events"><i class="fas fa-link"></i> Show Linked Events <strong>(3)</strong></a> </p>
+          </div>
+
+          <div class="linked">
+
+            <div class="event right" data-date-time="3 hours ago">
+
+              <div class="details">
+                <h2>Event Name</h2>
+                <p class="info"><i class="far fa-calendar"></i> 1st January 2018 <i class="far fa-clock"></i> 22:45 <i class="fas fa-paperclip"></i> 4</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi numquam officia ipsa quasi, ex est ullam delectus ducimus porro, inventore repellat repudiandae labore corporis facilis atque tempora soluta, laboriosam dicta!</p>
+                <p>
+                  <a href="#" class="button button-primary green"><i class="fas fa-eye"></i> View Event</a>
+                  <a href="#" class="button button-primary blue"><i class="fas fa-pencil-alt"></i> Quick Edit</a>
+                </p>
+              </div>
+
+            </div>
+
+            <div class="event right" data-date-time="3 hours ago">
+
+              <div class="details">
+                <h2>Event Name</h2>
+                <p class="info"><i class="far fa-calendar"></i> 1st January 2018 <i class="far fa-clock"></i> 22:45 <i class="fas fa-paperclip"></i> 4</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi numquam officia ipsa quasi, ex est ullam delectus ducimus porro, inventore repellat repudiandae labore corporis facilis atque tempora soluta, laboriosam dicta!</p>
+                <p>
+                  <a href="#" class="button button-primary green"><i class="fas fa-eye"></i> View Event</a>
+                  <a href="#" class="button button-primary blue"><i class="fas fa-pencil-alt"></i> Quick Edit</a>
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="event left" data-date-time="3 hours ago">
+
+            <div class="details">
+              <h2>Event Name</h2>
+              <p class="info"><i class="far fa-calendar"></i> 1st January 2018 <i class="far fa-clock"></i> 22:45 <i class="fas fa-paperclip"></i> 4</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi numquam officia ipsa quasi, ex est ullam delectus ducimus porro, inventore repellat repudiandae labore corporis facilis atque tempora soluta, laboriosam dicta!</p>
+              <p>
+                <a href="#" class="button button-primary green"><i class="fas fa-eye"></i> View Event</a>
+                <a href="#" class="button button-primary blue"><i class="fas fa-pencil-alt"></i> Quick Edit</a>
+              </p>
+            </div>
+
+          </div>
+
+          <div class="event right" data-date-time="3 hours ago">
+
+            <div class="details">
+              <h2>Event Name</h2>
+              <p class="info"><i class="far fa-calendar"></i> 1st January 2018 <i class="far fa-clock"></i> 22:45 <i class="fas fa-paperclip"></i> 4</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi numquam officia ipsa quasi, ex est ullam delectus ducimus porro, inventore repellat repudiandae labore corporis facilis atque tempora soluta, laboriosam dicta!</p>
+              <p>
+                <a href="#" class="button button-primary green"><i class="fas fa-eye"></i> View Event</a>
+                <a href="#" class="button button-primary blue"><i class="fas fa-pencil-alt"></i> Quick Edit</a>
+              </p>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+
       </div>
-
     </div>
 
-    <div class="linked">
+    <footer>
+      <div class="container">
 
-      <div class="event right">
+        <div class="row">
 
-        <div class="details">
-          <h2>Event Name</h2>
-          <p class="info"><i class="far fa-calendar"></i> 1st January 2018 <i class="far fa-clock"></i> 22:45 <i class="fas fa-paperclip"></i> 4</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi numquam officia ipsa quasi, ex est ullam delectus ducimus porro, inventore repellat repudiandae labore corporis facilis atque tempora soluta, laboriosam dicta!</p>
-          <p><a href="#" class="btn green"><i class="fas fa-eye"></i> View Event</a> <a href="#" class="btn blue"><i class="fas fa-pencil-alt"></i> Quick Edit</a> </p>
+          <div class="six columns">
+
+            <img src="/img/ideagen-logo-white.svg" alt="Ideagen Logo" class="footer__ideagenlogo">
+            <p class="footer__contactdetails">0800 123 1234 <br> <a href="#">support@ideagen.co.uk</a></p>
+
+          </div>
+
+          <!-- TODO: REMOVE THE INLINE STYLES AND FIX  -->
+          <div class="six columns" style="text-align:right;">
+
+            <img src="/img/aileron-airways-logo-white.svg" alt="Airleon Airways Logo" class="footer__aileronlogo">
+            <!-- <p class="footer__contactdetails">0800 123 1234 <br> <a href="#">support@ideagen.co.uk</a></p> -->
+          </div>
+
         </div>
 
       </div>
 
-      <div class="event right">
+      <p class="disclaimer">© Copyright 2018 Ideagen Plc. <br>
+Ideagen plc, Ergo House, Mere Way, Ruddington Fields Business Park, Ruddington, Nottinghamshire, NG11 6JS</p>
 
-        <div class="details">
-          <h2>Event Name</h2>
-          <p class="info"><i class="far fa-calendar"></i> 1st January 2018 <i class="far fa-clock"></i> 22:45 <i class="fas fa-paperclip"></i> 4</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi numquam officia ipsa quasi, ex est ullam delectus ducimus porro, inventore repellat repudiandae labore corporis facilis atque tempora soluta, laboriosam dicta!</p>
-          <p><a href="#" class="btn green"><i class="fas fa-eye"></i> View Event</a> <a href="#" class="btn blue"><i class="fas fa-pencil-alt"></i> Quick Edit</a> </p>
-        </div>
-
-      </div>
-
-      <div class="event right">
-
-        <div class="details">
-          <h2>Event Name</h2>
-          <p class="info"><i class="far fa-calendar"></i> 1st January 2018 <i class="far fa-clock"></i> 22:45 <i class="fas fa-paperclip"></i> 4</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi numquam officia ipsa quasi, ex est ullam delectus ducimus porro, inventore repellat repudiandae labore corporis facilis atque tempora soluta, laboriosam dicta!</p>
-          <p><a href="#" class="btn green"><i class="fas fa-eye"></i> View Event</a> <a href="#" class="btn blue"><i class="fas fa-pencil-alt"></i> Quick Edit</a> </p>
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="event left">
-
-      <div class="details">
-        <h2>Event Name</h2>
-        <p class="info"><i class="far fa-calendar"></i> 1st January 2018 <i class="far fa-clock"></i> 22:45 <i class="fas fa-paperclip"></i> 4</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi numquam officia ipsa quasi, ex est ullam delectus ducimus porro, inventore repellat repudiandae labore corporis facilis atque tempora soluta, laboriosam dicta!</p>
-        <p><a href="#" class="btn green"><i class="fas fa-eye"></i> View Event</a> <a href="#" class="btn blue"><i class="fas fa-pencil-alt"></i> Quick Edit</a> </p>
-      </div>
-
-    </div>
-
-    <div class="event left">
-
-      <div class="details">
-        <h2>Event Name</h2>
-        <p class="info"><i class="far fa-calendar"></i> 1st January 2018 <i class="far fa-clock"></i> 22:45 <i class="fas fa-paperclip"></i> 4</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi numquam officia ipsa quasi, ex est ullam delectus ducimus porro, inventore repellat repudiandae labore corporis facilis atque tempora soluta, laboriosam dicta!</p>
-        <p><a href="#" class="btn green"><i class="fas fa-eye"></i> View Event</a> <a href="#" class="btn blue"><i class="fas fa-pencil-alt"></i> Quick Edit</a> </p>
-      </div>
-
-    </div>
+    </footer>
 
   </div>
 
