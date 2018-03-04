@@ -7,6 +7,7 @@ This is the beginnings of the timeline UI for the IP3 project.
 Below are some quick docs on how to use
 
 ### Timelines
+
 To create a timeline, create a timeline div, then put an event inside it. You can use `left` or `right` on the `event` block to position each event.
 
 ```html
@@ -26,6 +27,26 @@ To create a timeline, create a timeline div, then put an event inside it. You ca
   </div>
 
 </div>
+
+</div>
+```
+
+### Modals
+
+To create a modal overlay box, add the following styled code:
+
+```html
+<div class="modal">
+
+  <div class="modal-content">
+
+    <span class="close">&times;</span>
+
+    <!-- PUT ANYTHING HERE  -->
+    <h2><i class="fas fa-calendar-alt"></i> Create New Something</h2>
+    <p>This will do something with an overlay modal.</p>
+
+  </div>
 
 </div>
 ```
