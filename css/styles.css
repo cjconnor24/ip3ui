@@ -66,7 +66,7 @@
 /* LINKED EVENTS */
 
 .linked {
-  /* display:none; */
+  display:none;
   left: 30px;
 }
 
@@ -226,6 +226,20 @@
 .details .info i {
   color: var(--navy-blue);
 }
+.details .linked-events strong {
+  background:#FFF;
+  color:var(--dark-red);
+  padding:5px 5px;
+  text-align:center;
+  border-radius:10px;
+}
+.button-row .button {
+  padding:0 10px;
+}
+/* .details .button-row a:nth-child(3) {
+  background:#F00!important;
+  width:100%;
+} */
 
 @media(max-width:1080px) {
   /* BLOCK BUTTONS WHEN THEY START TO FOLD */
