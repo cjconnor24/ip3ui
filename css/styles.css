@@ -201,7 +201,12 @@ animation:spin 4s linear infinite;
 .details .info i {
   color: var(--navy-blue);
 }
-
+@media(max-width:1080px){
+  /* BLOCK BUTTONS WHEN THEY START TO FOLD */
+.details .button {
+  display:block;
+}
+}
 @media(max-width:900px) {
 
   /* MOVE THE LINE TO THE LEFT */
