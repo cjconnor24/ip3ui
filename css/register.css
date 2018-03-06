@@ -1,0 +1,75 @@
+.register::after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
+.register .register__timeline {
+  position: relative;
+  float: left;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #CCC;
+  width: calc(48%);
+  margin: 0 0 2% 0;
+}
+
+.register .register__timeline:nth-child(odd) {
+  margin-right: 1%;
+}
+
+.register .register__timeline:nth-child(even) {
+  margin-left: 1%;
+}
+
+/* .register__timeline,
+.register {
+  float:left;
+} */
+
+.register__timeline .event-count {
+  float: left;
+  background: #CCC;
+  display: block;
+}
+
+.timeline-details {
+  display: block;
+  padding: 30px;
+}
+
+.register .timeline-details p {
+  margin: 0;
+  padding: 0;
+}
+
+.register .timeline-buttons {
+  float:left;
+  /* position: absolute;
+  right: 0;
+  top: 0; */
+}
+
+.register .timeline-buttons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.register .timeline-buttons ul li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.register .timeline-buttons ul li a {
+  text-decoration: none;
+  display: block;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background: #CCC;
+}
+
+.register .timeline-buttons ul li a span {
+  display: none;
+}
