@@ -190,11 +190,11 @@
   left: -10px;
 }
 
-.details h2 {
+.event .details h2 {
   font-weight: 700;
 }
 
-.details {
+.event .details {
   padding: 20px 30px;
   background-color: var(--event-bg);
   position: relative;

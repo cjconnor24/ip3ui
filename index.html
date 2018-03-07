@@ -179,10 +179,10 @@
         <h1>Event Register</h1>
         <p>Below is the event register blah blah.</p>
 
-        <div class="register" style="display:none;">
+        <div class="register">
 
           <!--     Timeline Repeat -->
-          <div class="r_timeline">
+          <div class="tline">
 
             <!-- Event Count -->
             <div class="events">
@@ -194,7 +194,7 @@
             <div class="details">
               <p class="details__name">Timeline Name</p>
               <p class="details__time"><i class="fas fa-calendar-alt"></i> Created 3 hours ago</p>
-              <p><a href="#" class="button">View Event</a></p>
+              <p><a href="#" class="button button-primary green">View Event</a></p>
             </div>
 
             <!--       Timeline Buttons -->
@@ -208,7 +208,7 @@
           </div>
 
           <!--     Timeline Repeat -->
-          <div class="r_timeline">
+          <div class="tline">
 
             <!-- Event Count -->
             <div class="events">
@@ -220,7 +220,7 @@
             <div class="details">
               <p class="details__name">Timeline Name</p>
               <p class="details__time"><i class="fas fa-calendar-alt"></i> Created 3 hours ago</p>
-              <p><a href="#" class="button">View Event</a></p>
+              <p><a href="#" class="button button-primary green">View Event</a></p>
             </div>
 
             <!--       Timeline Buttons -->
@@ -234,7 +234,7 @@
           </div>
 
           <!--     Timeline Repeat -->
-          <div class="r_timeline">
+          <div class="tline">
 
             <!-- Event Count -->
             <div class="events">
@@ -246,7 +246,7 @@
             <div class="details">
               <p class="details__name">Timeline Name</p>
               <p class="details__time"><i class="fas fa-calendar-alt"></i> Created 3 hours ago</p>
-              <p><a href="#" class="button">View Event</a></p>
+              <p><a href="#" class="button button-primary green">View Event</a></p>
             </div>
 
             <!--       Timeline Buttons -->
@@ -261,20 +261,21 @@
 
         </div>
 
+
         <h1>Event Timeline</h1>
         <p>Below are the current events listed on this timeline</p>
         <script>
           $(document).ready(function($) {
 
-                // TOGGLE THE LINKED EVENTS PROTOTYPE
-                $('#hide-descr').click(function(e) {
-                  e.preventDefault();
+            // TOGGLE THE LINKED EVENTS PROTOTYPE
+            $('#hide-descr').click(function(e) {
+              e.preventDefault();
 
-                $('.details').find('.info').next('p').slideToggle();
+              $('.details').find('.info').next('p').slideToggle();
 
-                });
+            });
 
-              });
+          });
         </script>
         <p>Click this button to hide the details <a href="#" id="hide-descr" class="button button-primary green">Toggle Descriptions</a></p>
 
