@@ -132,6 +132,36 @@ To create a modal overlay box, add the following styled code:
 </div>
 ```
 
+### Timeline Register
+
+To create a timeline register, put the following inside a `<div class="register">` tag:
+```html
+<div class="tline">
+
+  <!-- Event Count -->
+  <div class="events">
+    <i class="fas fa-exclamation-triangle"></i>
+    <span>25</span>
+  </div>
+
+  <!--       Timeline Details -->
+  <div class="details">
+    <p class="details__name">Timeline Name</p>
+    <p class="details__time"><i class="fas fa-calendar-alt"></i> Created 3 hours ago</p>
+    <p><a href="#" class="button button-primary green">View Event</a></p>
+  </div>
+
+  <!--       Timeline Buttons -->
+  <div class="buttons">
+    <ul>
+      <li><a href="#"><i class="fas fa-trash-alt"></i><span>Delete Event</span></a></li>
+      <li><a href="#"><i class="fas fa-pencil-alt"></i><span>Edit Event</span></a></li>
+    </ul>
+  </div>
+
+</div>
+```
+
 ## Updated
 
 Using a customised verson of skeleton CSS now.
