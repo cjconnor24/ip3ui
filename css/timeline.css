@@ -4,8 +4,6 @@
 
 .timeline, .linked {
   position: relative;
-  /* margin: 0 auto; */
-  /* max-width: 1280px; */
   width: 100%;
   margin: 50px auto 50px auto;
 }
@@ -52,10 +50,6 @@
 }
 .linked .linked .event {
   width: calc(50% - 60px);
-}
-
-.linked .event .details {
-  /* width:calc(100% - 30px); */
 }
 
 .linked .event:nth-child(odd) .details {
@@ -116,7 +110,6 @@
   position: absolute;
   top: 22px;
   width: 0;
-  /* z-index: 0.9; */
   right: 20px;
   border: medium solid var(--event-bg);
   border-width: 10px 0 10px 10px;
@@ -130,7 +123,6 @@
   position: absolute;
   top: 22px;
   width: 0;
-  /* z-index: 1; */
   left: 20px;
   border: medium solid var(--event-bg);
   border-width: 10px 10px 10px 0;
@@ -227,10 +219,7 @@
     width: calc(100% - 30px);
   }
   /* NESTED EVENT */
-  .linked .linked .event .details {
-    /* margin:0;
-    padding:0; */
-  }
+
   .linked .linked .event {
     width: calc(100% - 60px);
     margin:0;
