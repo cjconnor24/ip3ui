@@ -22,7 +22,7 @@
 
         e.preventDefault();
 
-        $(this).parents().eq(2).next('.linked').slideToggle();
+        $(this).parents().eq(2).next('.linked').toggle();
 
         if ($(this).find('span').text() === 'Show') {
 
