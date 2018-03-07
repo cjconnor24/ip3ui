@@ -280,4 +280,15 @@
     border-width: 10px 10px 10px 0;
     border-color: transparent var(--event-bg) transparent transparent;
   }
+
+/* THE BRANCHING BOXES */
+.event + .linked::after {
+width:10px;
+height:30px;
+left:-20px;
+top:-30px;
+}
+.linked .linked::after {
+}
+
 }
