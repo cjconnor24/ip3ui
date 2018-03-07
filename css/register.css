@@ -95,6 +95,7 @@
   color:#FFF;
   height:40px;
   width:40px;
+  margin:0 0 5px 0;
   transition: var(--transition-speed);
 }
 .tline .buttons ul li:nth-child(1) a {background:var(--dark-red);}
@@ -103,6 +104,14 @@
 .tline .buttons ul li:nth-child(2) a:hover {background:var(--dark-green-highlight);}
 .tline .buttons ul li a span {
   display:none;
+}
+@media(max-width:1080px){
+  .tline .details .details__name {
+    font-size:1.5em;
+  }
+  .tline .details .details__time {
+    font-size:0.9em;
+  }
 }
 @media(max-width:900px){
   .register .tline {
