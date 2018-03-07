@@ -6,34 +6,3 @@
 @import "timeline.css"; /* STYLES FOR TIMELINE */
 @import "register.css"; /* STYLES FOR TIMELINE REGISTERS */
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
-
-/* COLOUR STYLES FOR BTUTONS */
-
-.green {
-  background: var(--dark-green) !important;
-  border: var(--dark-green) !important;
-}
-
-.green:hover {
-  background: var(--dark-green-highlight) !important;
-  border: var(--dark-green) !important;
-}
-
-.red {
-  background: var(--dark-red) !important;
-  border: var(--dark-red-highlight) !important;
-}
-
-.red:hover {
-  background: var(--dark-red-highlight) !important;
-}
-
-.lge {
-  padding: 20px 30px;
-  font-size: 1.1em;
-}
-
-.sml {
-  padding: 10px 10px;
-  font-size: 0.7em;
-}
