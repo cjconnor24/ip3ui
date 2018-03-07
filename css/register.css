@@ -1,4 +1,4 @@
-.register::after {
+/* .register::after {
   content: ' ';
   display: block;
   clear: both;
@@ -19,14 +19,14 @@
 
 .register .register__timeline:nth-child(even) {
   margin-left: 1%;
-}
+} */
 
 /* .register__timeline,
 .register {
   float:left;
 } */
 
-.register__timeline .event-count {
+/* .register__timeline .event-count {
   float: left;
   background: #CCC;
   display: block;
@@ -40,16 +40,16 @@
 .register .timeline-details p {
   margin: 0;
   padding: 0;
-}
+} */
 
-.register .timeline-buttons {
+/* .register .timeline-buttons {
   float:left;
-  /* position: absolute;
+  position: absolute;
   right: 0;
-  top: 0; */
-}
+  top: 0;
+} */
 
-.register .timeline-buttons ul {
+/* .register .timeline-buttons ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -72,4 +72,4 @@
 
 .register .timeline-buttons ul li a span {
   display: none;
-}
+} */
