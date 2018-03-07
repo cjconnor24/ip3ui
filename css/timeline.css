@@ -51,7 +51,15 @@
 .linked .linked .event {
   width: calc(50% - 60px);
 }
-
+.linked .event .details {
+  /* background:var(--light-red); */
+  border:3px dashed var(--light-red);
+}
+.linked .linked .event .details {
+  /* background:darkred; */
+  border:3px dashed darkred;
+  /* color:#FFF; */
+}
 .linked .event:nth-child(odd) .details {
   margin: 0px 0 20px 30px;
 }
