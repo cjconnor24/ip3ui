@@ -25,11 +25,30 @@
 .event + .linked::after {
   content: ' ';
   position:absolute;
-  background:url('/img/linkage.svg') no-repeat center center;
-  top:-176px;
-  left:calc(50% - 62px);
-  width:72px;
+  /* background:url('/img/linkage.svg') no-repeat center center; */
+  border-right:20px solid var(--light-red);
+  border-top:20px solid var(--light-red);
+  /* border:1px solid #F00; */
+  top:-180px;
+  left:calc(50% - 60px);
+  border-radius:0 20px 0 0;
+  width:50px;
   height:178px;
+  z-index:-0.5;
+  /* background:#F00; */
+}
+.linked .linked::after {
+  content: ' ';
+  position:absolute;
+  /* background:url('/img/linkage.svg') no-repeat center center; */
+  border-right:20px solid darkred;
+  border-top:20px solid darkred;
+  /* border:1px solid #F00; */
+  top:-30px;
+  left:calc(50% - 20px);
+  border-radius:0 20px 0 0;
+  width:10px;
+  height:20px;
   z-index:-0.5;
   /* background:#F00; */
 }
