@@ -129,6 +129,36 @@ footer .disclaimer {
   margin:30px 0;
 }
 
+/* COLOUR STYLES FOR BUTTONS */
+
+.green {
+  background: var(--dark-green) !important;
+  border: var(--dark-green) !important;
+}
+
+.green:hover {
+  background: var(--dark-green-highlight) !important;
+  border: var(--dark-green) !important;
+}
+
+.red {
+  background: var(--dark-red) !important;
+  border: var(--dark-red-highlight) !important;
+}
+
+.red:hover {
+  background: var(--dark-red-highlight) !important;
+}
+
+.lge {
+  padding: 20px 30px;
+  font-size: 1.1em;
+}
+
+.sml {
+  padding: 10px 10px;
+  font-size: 0.7em;
+}
 
 /* MODAL STYLES */
 .modal {
