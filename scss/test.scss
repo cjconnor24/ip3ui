@@ -1,0 +1,15 @@
+.test {
+
+	text-align:center;
+	font-family: Arial;
+
+	&-another {
+
+		text-align:left;
+	}
+
+}
+
+.another-style {
+	font-family: Arial, Verdana;
+}
