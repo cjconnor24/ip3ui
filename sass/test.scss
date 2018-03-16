@@ -2,11 +2,10 @@ $redcolor: #F00;
 .test {
 
 	text-align:center;
-	font-family: Arial
+	font-family: Arial;
 	color: $redcolor;
 
 	&-another {
-
 		text-align:left;
 	}
 
