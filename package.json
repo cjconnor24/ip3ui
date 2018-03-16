@@ -1,0 +1,23 @@
+{
+  "name": "ip3ui",
+  "version": "1.0.0",
+  "description": "This is the beginnings of the timeline UI for the IP3 project.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "npm": "^5.7.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://cjconnor24@bitbucket.org/cjconnor24/aileron-airlines-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/cjconnor24/aileron-airlines-ui#readme"
+}
