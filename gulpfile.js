@@ -10,3 +10,9 @@ gulp.task('styles', function() {
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./css/'));
 });
+
+// gulp.task('test', function() {
+//     gulp.src('sass/test.scss')
+//         .pipe(sass().on('error', sass.logError))
+//         .pipe(gulp.dest('./scss/'));
+// });
