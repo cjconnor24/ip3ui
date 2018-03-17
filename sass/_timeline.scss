@@ -157,7 +157,7 @@
   border: medium solid var(--event-bg);
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent var(--event-bg);
-  transition: var(--transition-speed);
+  transition: $transitionspeed;
 }
 
 .right::before {
@@ -199,7 +199,7 @@
   background-color: var(--event-bg);
   position: relative;
   border-radius: 6px;
-  transition: var(--transition-speed);
+  transition: $transitionspeed;
 }
 
 .event.left .details {

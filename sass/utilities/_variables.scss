@@ -20,8 +20,8 @@ $event-bg: #eee;
 $font-family: 'Lato', sans-serif;
 
 // UTILITY
-$grid-width: 1280px;
-$transition-speed: 0.25s;
+$gridwidth: 1280px;
+$transitionspeed: 0.25s;
 
 :root {
   /* COLOUR VARIABLES */
@@ -37,7 +37,7 @@ $transition-speed: 0.25s;
   --light-red: #CB9195;
   --highlight-yellow: #FDFFD5;
   --event-bg: #eee;
-  --transition-speed: 0.25s;
-  --font-family: 'Lato', sans-serif;
-  --grid-width: 1280px;
+  // --transition-speed: 0.25s;
+  // --font-family: 'Lato', sans-serif;
+
 }

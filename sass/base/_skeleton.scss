@@ -31,7 +31,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width:var(--grid-width);
+  max-width:$gridwidth;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -124,7 +124,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: var(--font-family), "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $font-family, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: $darkgray; }
 
 
@@ -201,7 +201,7 @@ input[type="button"]:focus {
   color: #333;
   border-color: #888;
   outline: 0;
-transition: all var(--transition-speed);
+transition: all $transitionspeed;
  }
 
 /* PRIMARY BUTTON */
@@ -213,7 +213,7 @@ input[type="button"].button-primary {
   color: #FFF;
   background-color: $navyblue;
   border-color: $navyblue;
-  transition: all var(--transition-speed);
+  transition: all $transitionspeed;
  }
 
 .button.button-primary:hover,

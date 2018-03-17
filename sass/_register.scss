@@ -103,7 +103,7 @@
   height:40px;
   width:40px;
   margin:0 0 5px 0;
-  transition: var(--transition-speed);
+  transition: $transitionspeed;
 }
 
 .tline .buttons ul li:nth-child(1) a {background:$navyblue;}
