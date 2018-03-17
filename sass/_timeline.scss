@@ -14,7 +14,7 @@
   content: ' ';
   position: absolute;
   width: 20px;
-  background: var(--light-blue);
+  background: $lightblue;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -124,13 +124,13 @@
   right: -10px;
   top: 20px;
   border-radius: 50%;
-  border: 3px solid var(--navy-blue);
+  border: 3px solid $navyblue;
 }
 
 /* ADDING LINK ICONS TO LINKED EVENTS*/
 
 .linked .event::after {
-  color: var(--dark-red);
+  color: $darkred;
   font-weight: 900;
   font-family: "Font Awesome\ 5 Free";
   content: "\f0c1";
@@ -138,7 +138,7 @@
   text-align: center;
   line-height: 14px;
   animation: spin 4s linear infinite;
-  border-color: var(--dark-red);
+  border-color: $darkred;
 }
 
 /* POSITION LEFT AND RIGHT OF LINE */
@@ -215,11 +215,11 @@
 }
 
 .details .info i {
-  color: var(--navy-blue);
+  color: $navyblue;
 }
 .details .linked-events strong {
   background:#FFF;
-  color:var(--dark-red);
+  color:$darkred;
   padding:5px 5px;
   text-align:center;
   border-radius:10px;

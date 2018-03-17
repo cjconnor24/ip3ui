@@ -45,7 +45,7 @@
 /*   display:block; */
 }
 .tline .events span {
-  background:var(--dark-red);
+  background:$darkred;
   color:#FFF;
   padding:5px 10px;
   border-radius:5px;
@@ -69,12 +69,12 @@
   padding:0;
 }
 .tline .details .details__time {
-  color:var(--dark-green);
+  color:$darkgreen;
   margin:0 0 20px 0;
   padding:0;
 }
 .tline .details .details__time i {
-  color:var(--dark-gray);
+  color:$darkgray;
 }
 .tline .details .button {
   margin:0;
@@ -106,12 +106,12 @@
   transition: var(--transition-speed);
 }
 
-.tline .buttons ul li:nth-child(1) a {background:var(--navy-blue);}
-.tline .buttons ul li:nth-child(1) a:hover {background:var(--navy-blue-darken);}
-.tline .buttons ul li:nth-child(2) a {background:var(--dark-red);}
-.tline .buttons ul li:nth-child(2) a:hover {background:var(--dark-red-highlight);}
-.tline .buttons ul li:nth-child(3) a {background:var(--dark-green);}
-.tline .buttons ul li:nth-child(3) a:hover {background:var(--dark-green-highlight);}
+.tline .buttons ul li:nth-child(1) a {background:$navyblue;}
+.tline .buttons ul li:nth-child(1) a:hover {background:darken($navyblue,20);}
+.tline .buttons ul li:nth-child(2) a {background:$darkred;}
+.tline .buttons ul li:nth-child(2) a:hover {background:lighten($darkred,10);}
+.tline .buttons ul li:nth-child(3) a {background:$darkgreen;}
+.tline .buttons ul li:nth-child(3) a:hover {background:lighten($darkgreen,10);}
 .tline .buttons ul li a span {
   display:none;
 }

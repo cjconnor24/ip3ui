@@ -1,5 +1,5 @@
 body {
-  background: var(--navy-blue);
+  background: $navyblue;
 }
 
 .main-body {
@@ -15,7 +15,7 @@ body {
 /* NAVIGATION STYLES */
 
 nav {
-  background: var(--navy-blue);
+  background: $navyblue;
   position:fixed;
 
   display:block;
@@ -53,8 +53,8 @@ font-weight:bold;
 transition:all var(--transition-speed);
 }
 .navbar ul li a:hover {
-  background:var(--light-blue);
-  color:var(--navy-blue);
+  background:$lightblue;
+  color:$navyblue;
 }
 .navbar a.nav__logo {
   background:url(/img/coruson-logo-white.svg) no-repeat center center;
@@ -84,7 +84,7 @@ transition:all var(--transition-speed);
 .navbar .navbar__hamburger::after {
   content:'\f0c9';
   display:block;
-  color:var(--navy-blue);
+  color:$navyblue;
   text-align:center;
   line-height:40px;
   font-size:20px;
@@ -93,7 +93,7 @@ transition:all var(--transition-speed);
   transition:all var(--transition-speed);
 }
 .navbar .navbar__hamburger:hover {
-  background:var(--dark-green);
+  background:$darkgreen;
   /* box-shadow:inset 0px 0px 10px #000; */
 }
 .navbar .navbar__hamburger:hover::after {
@@ -104,7 +104,7 @@ transition:all var(--transition-speed);
 footer {
   padding: 30px 0;
   color: white;
-  background: var(--navy-blue);
+  background: $navyblue;
   box-shadow:inset 0px 0px 10px #333;
 }
 .footer__contactdetails {
@@ -117,7 +117,7 @@ footer {
   transition: all var(--transition-speed);
 }
 .footer__contactdetails a:hover {
-  color:var(--navy-blue-darken);
+  color:darken($navyblue,20);
 }
 .footer__ideagenlogo, .footer__aileronlogo {
   width:50%;
@@ -132,23 +132,27 @@ footer .disclaimer {
 /* COLOUR STYLES FOR BUTTONS */
 
 .green {
-  background: var(--dark-green) !important;
-  border: var(--dark-green) !important;
-}
+  background: $darkgreen !important;
+  border: $darkgreen !important;
 
-.green:hover {
-  background: var(--dark-green-highlight) !important;
-  border: var(--dark-green) !important;
+  &:hover {
+    background: lighten($darkgreen,5)!important;
+    border: $darkgreen !important;
+  }
+  
 }
 
 .red {
-  background: var(--dark-red) !important;
-  border: var(--dark-red-highlight) !important;
+  background: $darkred !important;
+  border: lighten($darkred,10)!important;
+
+  &:hover {
+    background: lighten($darkred,7)!important;
+  }
+
 }
 
-.red:hover {
-  background: var(--dark-red-highlight) !important;
-}
+.red
 
 .lge {
   padding: 20px 30px;
@@ -195,11 +199,11 @@ background-color: var(--dark-gray-transparent);
   right:20px;
   top:20px;
   color:#FFF;
-  background:var(--dark-gray);
+  background:$darkgray;
   transition:all var(--transition-speed);
 }
 .modal-content .close:hover {
-  background:var(--dark-red);
+  background:$darkred;
 }
 
 @media(max-width:600px) {
