@@ -1,25 +1,26 @@
 // COLOURS
 
+// MAIN SITE COLOURS
 $navyblue: #0684C2;
+$darkgreen: #10AB96;
+$darkred: #AB1010;
 
 $navy-blue-transparent: rgba(6, 132, 194, 0.8);
 $lightblue: #E2EEF4;
 $light-blue-highlight: #50A8D4;
-$darkgreen: #10AB96;
 
 $darkgray: #3A4850;
-// $dark-gray-highlight: #747E84;
 $dark-gray-transparent: rgba(58, 72, 80, 0.95);
-$darkred: #AB1010;
+
 $light-red: #CB9195;
-$highlight-yellow: #FDFFD5;
+$highlightyellow: #FDFFD5;
 $event-bg: #eee;
 
 
 // FONTS
 $font-family: 'Lato', sans-serif;
 
-// UTILITY
+// UTILITY VARIABLES
 $gridwidth: 1280px;
 $transitionspeed: 0.25s;
 
@@ -27,17 +28,12 @@ $transitionspeed: 0.25s;
   /* COLOUR VARIABLES */
 
   --navy-blue-transparent: rgba(6, 132, 194, 0.8);
-
   --light-blue-highlight: #50A8D4;
-
   --dark-gray: #3A4850;
-  // --dark-gray-highlight: #747E84;
   --dark-gray-transparent: rgba(58, 72, 80, 0.95);
   --dark-red: #AB1010;
   --light-red: #CB9195;
-  --highlight-yellow: #FDFFD5;
   --event-bg: #eee;
-  // --transition-speed: 0.25s;
-  // --font-family: 'Lato', sans-serif;
+
 
 }
