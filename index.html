@@ -36,6 +36,23 @@
 
       });
 
+      // SLIDER Button
+      $('#slider').click(function(e){
+        console.log("Slider was clicked");
+
+        var register = $('.register');
+
+        if($(this).is(":checked")){
+          console.log("Slider is checked");
+          register.addClass('rows');
+
+        } else {
+          console.log("Slider is NOT checked");
+          register.removeClass('rows');
+        }
+
+      });
+
 
       // SOME PROTOTYPE CODE FOR SHOWING / HIDING MODALS
       $('.modal-button').click(function(e) {

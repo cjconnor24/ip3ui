@@ -1,8 +1,11 @@
+
 // REGISTER
 .register {
   display:flex;
   flex-wrap: wrap;
   justify-content:space-between;
+
+
 
   // TIMELINE BOX
   .tline {
@@ -38,6 +41,15 @@
 
   }
 
+  // .tline.rows {
+  //   width:100%!important;
+  // }
+
+}
+
+// MAKE LINES STRETCH ON SLIDER CLICK
+.register.rows .tline {
+  width:100%;
 }
 
 .tline .events i,
