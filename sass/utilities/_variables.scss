@@ -5,14 +5,11 @@ $navyblue: #0684C2;
 $darkgreen: #10AB96;
 $darkred: #AB1010;
 
-$navy-blue-transparent: rgba(6, 132, 194, 0.8);
 $lightblue: #E2EEF4;
-$light-blue-highlight: #50A8D4;
 
 $darkgray: #3A4850;
-$dark-gray-transparent: rgba(58, 72, 80, 0.95);
 
-$light-red: #CB9195;
+
 $highlightyellow: #FDFFD5;
 $event-bg: #eee;
 
@@ -24,16 +21,8 @@ $font-family: 'Lato', sans-serif;
 $gridwidth: 1280px;
 $transitionspeed: 0.25s;
 
-:root {
-  /* COLOUR VARIABLES */
-
-  --navy-blue-transparent: rgba(6, 132, 194, 0.8);
-  --light-blue-highlight: #50A8D4;
-  --dark-gray: #3A4850;
-  --dark-gray-transparent: rgba(58, 72, 80, 0.95);
-  --dark-red: #AB1010;
-  --light-red: #CB9195;
-  --event-bg: #eee;
-
-
+// MIXINS
+@mixin background-opacity($color, $opacity: 0.3) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
 }
